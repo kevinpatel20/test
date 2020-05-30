@@ -7,7 +7,7 @@ export default function App() {
   fetch("http://157.32.156.113:3000/notifications")
     .then(r=>{console.log(r)})
     .catch((err) => {
-      console.log(err);
+      console.log(err,error);
     });
   return <Renderer data={res} />;
 }
